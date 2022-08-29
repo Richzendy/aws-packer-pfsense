@@ -30,8 +30,8 @@
       "headless": "true",
       "http_directory": "config",
       "http_port_min": "8100",
-      "iso_checksum": "sha256:234bcd61549867cfda719424a11bb0e13233c2b582acc7cec0ee1b0ec0966cf3",
-      "iso_url": "input/pfSense-CE-2.5.2-RELEASE-amd64.iso",
+      "iso_checksum": "sha256:f6520bb14a5e690c6533e4e8fbf4a48d2967f3bc35a713e716b9c64317a13f23",
+      "iso_url": "input/pfSense-CE-2.6.0-RELEASE-amd64.iso",
       "output_directory": "output-vbox",
       "shutdown_command": "shutdown -p now",
       "ssh_password": "pfsense",
@@ -77,7 +77,7 @@
           "intnet"
         ]
       ],
-      "vm_name": "pfSense-CE-2.5.2_{{ isotime \"20060102_030405\"}}",
+      "vm_name": "pfSense-CE-2.6.0_{{ isotime \"20060102_030405\"}}",
       "vrdp_bind_address": "127.0.0.1",
       "vrdp_port_max": "3389",
       "vrdp_port_min": "3389"
