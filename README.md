@@ -43,16 +43,16 @@ As soon as your instance is up and running, __update the settings to suit your n
 # Post Install
 
 * The default disk of this image is 4GB, if you want more space when the ec2 is created choose more disk, for example 10GB and when boot login into a shell <https://chowdera.com/2022/144/202205242139158040.html>:
-
+```
     swapoff -a
     gpart delete -i 2 ada0s1
     gpart resize -i 1 ada0
     gpart resize -i 1 -s 9000M ada0s1
     gpart add -t freebsd-swap ada0s1
     growfs /
-
+```
 To increase the disk space and reboot.
 
-* The ssh user is root and his default password is pfsense
-* The webconfig user is admin and his default password is pfsense
+* The ssh user is **root** and his default password is **pfsense**
+* The webconfig user is **admin** and his default password is **pfsense**
 * Please change the password after login
