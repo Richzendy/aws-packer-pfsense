@@ -3,7 +3,7 @@
 Build and import a pfSense image for usage on AWS using Hashicorp Packer with Virtualbox.
 
 # Information
-This Instructions are to build a pfSense 2.4.5 version to Virtualbox, if you need another version please check the tags of this repository, the master branch must to have the last version tested.
+This Instructions are to build a pfSense 2.5.2 version to Virtualbox, if you need another version please check the tags of this repository, the master branch must to have the last version tested.
 
 Feel free to send recommendations, bugfixes like issues in this repository.
 
@@ -13,11 +13,11 @@ Unlicense
 # Prerequisites
 * Packer installed: https://www.packer.io/downloads
 * Virtualbox or qemu instaled
-* A pfSense-CE-2.4.5-RELEASE-amd64.iso iso image from <http://mirror.transip.net/pfsense/downloads/>
+* A pfSense-CE-2.5.2-RELEASE-amd64.iso iso image from <https://sgpfiles.netgate.com/mirror/downloads/>
 * aws-cli installed and configured 
 
 # Instructions
-* Download a copy of the pfSense image `pfSense-CE-2.4.5-RELEASE-amd64.iso` to the `input/` directory and then run `packer build pfsense-vbox.json`.
+* Download a copy of the pfSense image `pfSense-CE-2.5.2-RELEASE-amd64.iso` to the `input/` directory and then run `packer build pfsense-vbox.json`.
 * `remote-vbox-rdp.sh` can be used to view the build process. Do not manually press keys during viewing.
 * Created images are placed in the `output-vbox/` directory.
 * `aws/import-role/import-role.sh` contains the required roles for the AWS import processes. Policies need to be modified to match your AWS account.
